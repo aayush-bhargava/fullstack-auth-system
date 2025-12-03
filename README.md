@@ -1,46 +1,99 @@
-# Getting Started with Create React App
+**🚀 AI Finance Auth System — Fullstack Authentication UI**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A modern, responsive authentication system built using React, featuring dynamic UI transitions, real-time validations, and full backend API integration.
+This project demonstrates frontend engineering, API communication, state management, and clean UI/UX practices — perfect for showcasing full-stack skills.
 
-In the project directory, you can run:
+**⭐ Features**
 
-### `npm start`
+🔐 User Signup & Login
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+🎨 Beautiful Dynamic UI (animated forms, transitions)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+💬 Real-time Input Validation
 
-### `npm test`
+🔗 Fully Connected to Backend Auth Service (Spring Boot)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📡 REST API Integration (Axios)
 
-### `npm run build`
+🧭 Protected Navigation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+💡 Modern Component Architecture
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⚡ Fast & Responsive
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**🛠️ Tech Stack**
+Frontend
 
-### `npm run eject`
+React.js (CRA)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+CSS Modules / Custom Styles
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Axios
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+React Hooks
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Backend (Integrated but separate repo)
 
-## Learn More
+Spring Boot
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+PostgreSQL
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+JWT Authentication
+
+**📸 UI Preview**
+<img width="1902" height="920" alt="image" src="https://github.com/user-attachments/assets/2ddab0d6-7945-407c-b6f1-0102bcfe8061" />
+
+
+
+🚀 Getting Started
+1️⃣ Install Dependencies
+npm install
+
+2️⃣ Start Development Server
+npm start
+
+
+App will start at:
+👉 http://localhost:3000
+
+🔌 API Integration
+
+The app communicates with your backend:
+
+POST http://localhost:8080/auth/signup
+POST http://localhost:8080/auth/login
+
+🧪 Environment Variables
+
+Create a .env file:
+
+REACT_APP_API_URL=http://localhost:8080
+
+📦 Production Build
+npm run build
+
+
+This generates an optimized build in the /build folder.
+
+**📘 What This Project Demonstrates**
+
+✔ Clean frontend architecture
+✔ Hands-on API integration
+✔ Authentication flows (real-world skill)
+✔ Good design sense
+✔ Readable + scalable code
+
+**Perfect project to show in interviews �**�
+
+🤝 Contributing
+
+Contributions & suggestions are always welcome!
+
+
+**👤 Author**
+
+**Aayush Bhargava**
+**Backend Developer | API Integrations | Microservices**
+**📧 aayushbhargava71@gmail.com
+🌐 GitHub: github.com/aayush-bhargava**
