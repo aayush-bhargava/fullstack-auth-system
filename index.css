@@ -1,0 +1,106 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND GRADIENT */
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1b1b1b, #101010);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  color: white;
+}
+
+/* CUSTOM GLOWING CURSOR */
+.custom-cursor {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  background: rgba(0, 200, 255, 0.9);
+  box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(0, 200, 255, 0.3);
+  transform: translate(-50%, -50%);
+  animation: trailFade 0.5s linear forwards;
+}
+
+@keyframes trailFade {
+  from { opacity: 0.7; transform: scale(1); }
+  to { opacity: 0; transform: scale(2); }
+}
+
+/* CLICK RIPPLE EFFECT */
+.click-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 255, 255, 0.7);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: ripple 0.4s ease-out forwards;
+}
+
+@keyframes ripple {
+  from { opacity: 1; transform: scale(0.3); }
+  to { opacity: 0; transform: scale(3); }
+}
+
+/* GLASSMORPHISM CARDS */
+.glass-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+.glass-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+#particle-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.floating-orb {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translate(0,0); }
+  50% { transform: translate(40px, -60px); }
+  100% { transform: translate(0,0); }
+}
+.page-transition {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
