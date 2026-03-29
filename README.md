@@ -25,7 +25,7 @@ This project demonstrates frontend engineering, API communication, state managem
 **🛠️ Tech Stack**
 Frontend
 
-React.js (CRA)
+Next.js (CRA)
 
 CSS Modules / Custom Styles
 
